@@ -11,7 +11,7 @@
       </div>
       <div class="modal-body">
 			<div class="register-form">
-                     <form action="" method="post">
+                     <form action="function.php" method="post">
                         <div class="fields-grid">
                            <div class="styled-input">
                               <input type="text" placeholder="Your Name" name="name" required="">

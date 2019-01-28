@@ -1,7 +1,6 @@
  <!-- Optional JavaScript -->
- <?php include 'modal.php' ;
-      include 'footer.php';
-  ?>
+ <?php include 'modal.php';
+       include 'footer.php'; ?>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"  crossorigin="anonymous"></script>

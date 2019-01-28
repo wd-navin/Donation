@@ -22,7 +22,7 @@ $query = mysql_query("select * from users where password='$password' AND email='
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
-header("location:index.php"); // Redirecting To Other Page
+header("location:Admin/dashboard.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";
 }
@@ -34,6 +34,7 @@ mysql_close($con); // Closing connection
 
 <!-- SIGNUP START -->
  <?php
+
      if(isset($_POST['save'])){
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -41,12 +42,22 @@ mysql_close($con); // Closing connection
         $age = $_POST['age'];
         $gender = $_POST['gender'];
 
+        
+
         $sql = mysql_query("insert into users(name, email, password, age, gender)
         VALUES('$name', '$email', '$password', ' $age', ' $gender')
         ");
-        	$_SESSION['email'] = $email;
-            $_SESSION['success'] = "You are now logged in";
-            header("location:index.php");
+        
+        $result = mysql_query($sql, $con);
+
+       // if(mysql_num_rows($result) == 1){
+         //   echo "pass";
+            header("location:Admin/dashboard.php");
+        //}
+        //else{
+          //  echo "fail";
+        //}
+        	           
     }
 
     ?>

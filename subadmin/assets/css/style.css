@@ -1,0 +1,82 @@
+
+.wrapper{width: 100%;display: flex;}
+
+/*  NAVBAR */
+#mainnav{background-color:black;background-clip:border-box;position: sticky;}
+
+#mainnav .navbar-brand{color:#3AAFA9;font-weight:800;font-size:1.5rem}
+
+#mainnav .navbar-nav .nav-item .nav-link img{border-radius: 50%;}
+
+#mainnav .navbar-nav .nav-item .nav-link img{border-radius: 50%;}
+
+#mainnav .dropdown .dropdown-menu a{color: #72777a!important;font-size:13px;font-weight:600}
+
+#mainnav .navbar-nav .dropdown .dropdown-menu img{border-radius: 50%;}
+
+#mainnav .dropdown:hover>.floating{display:block;}
+
+#mainnav .dropdown .floating .fa{font-size: 1rem}
+
+#mainnav .badge{
+    display: inline-block;
+    padding: 0px 4px 1.3px 3px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    top: 2px;
+    border-radius: .35rem;position: absolute;
+    right: 0.01rem
+}	
+
+#mainnav .navbar-nav .nav-item .nav-link .fa{font-size:13px}
+
+/* SIDEBAR */
+
+#sidenav{background-color:black;min-height:100vh;width:250px;z-index:1;}
+
+#sidenav.active{margin-left:-250px;}
+
+#sidenav .navbar-nav .nav-item .nav-link{color:#a6a6a6;margin-top:1rem;padding-left:.5rem}
+
+#sidenav .navbar-nav .nav-item .nav-link:hover{background-color:#a6a6a6;color: black;}
+
+#sidenav .navbar-nav h4{padding-left: 1rem}
+
+#sidenav .navbar-nav strong{display: none;}
+
+#main-content {width:100%}
+
+/* 	MYSIDENAV */
+
+ #mysidenav{width: 250px;z-index:1;transition: all 0.1s;background-color: black;padding-top: 4rem;display: none;}
+
+ #mysidenav.active{display: block;}
+
+ #mysidenav .badge{position: absolute;top:4rem;border-radius:50%;padding: 0px 4px 0.3px 3px;font-size: 12px;font-weight: 500; }
+
+ #mysidenav .badge-head-1{right:4.4rem}  
+
+ #mysidenav .badge-head-2{top:6.7rem;right:4.3rem}
+
+ #mysidenav .navbar-nav .nav-item .nav-link{text-align: center;}
+
+ #mysidenav .navbar-nav .nav-item .nav-link img{border-radius: 50%;}
+
+ .table  td{font-size: 14px}
+
+ .list-group-item{font-size: 14px;}
+
+ hr{margin-top: 0;}
+
+ @media(min-width:640px)
+     {
+     	#main-content #table-content{width:85%;margin-left: 4.5rem;margin-top:3rem}
+
+     	#sidenav .navbar-nav h4{padding-left:1rem}
+
+     	.content-1{width: 100%;}
+     }
